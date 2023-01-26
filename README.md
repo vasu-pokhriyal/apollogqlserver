@@ -4,7 +4,7 @@ Installation
 nmp install
 npm start 
 
-env file contain personal token for authentication
+create a file .env,and add personal token from github
 node version : 14.20
 
 
