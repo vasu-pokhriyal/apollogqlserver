@@ -11,7 +11,7 @@ node version : 14.20
 Api documentation
 1) get all repositories
     query{
-  repositories {
+  repositories(page:1) {
     name
     size 
     owner
