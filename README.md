@@ -57,13 +57,15 @@ Api documentation
   }
 }
     sample response
-    {
-    "data": {
-        "singleRepos": {
-            "name": "repoA",
-            "size": "16435",
-            "owner": "vasu-pokhriyal",
-            "isPrivate": "false"
-        }
+    query{
+  singleRepos(owner:"vasu-pokhriyal",name:"repoA") {
+    name
+    size 
+    owner
+    isPrivate
+    totalFiles
+    webHooks{
+      id,type, name,url
     }
-    }
+  }
+}
